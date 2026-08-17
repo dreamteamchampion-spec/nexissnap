@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guides — NexisSnap</title>
+<meta name="description" content="NexisSnap guides: hand-picked product comparisons with real commentary and trade-off analysis.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(circle at 50% 0%, #14141c 0%, #08080b 55%, #050506 100%);
+    color: #f4f4f5;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding: 48px 20px 80px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .back { color: #7dd3fc; text-decoration: none; font-size: 0.85rem; }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    margin: 24px 0 8px;
+    font-weight: 700;
+  }
+  .sub { color: #a1a1aa; font-size: 0.95rem; margin-bottom: 36px; line-height: 1.5; }
+  .grid { display: flex; flex-direction: column; gap: 14px; }
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 18px 22px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .card.live { cursor: pointer; }
+  .card.live:hover { background: rgba(255,255,255,0.05); border-color: rgba(167,139,250,0.3); }
+  .card.soon { opacity: 0.45; }
+  .card-left { display: flex; flex-direction: column; gap: 4px; }
+  .card-title { font-weight: 600; font-size: 1rem; }
+  .card-cat { font-size: 0.75rem; color: #a78bfa; letter-spacing: 0.04em; text-transform: uppercase; }
+  .badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .badge.live { background: linear-gradient(135deg,#a78bfa,#5eead4); color: #0a0a0b; }
+  .badge.soon { background: rgba(255,255,255,0.08); color: #a1a1aa; }
+  .arrow { color: #5eead4; font-size: 1.1rem; margin-left: 12px; }
+  footer { margin-top: 56px; color: #71717a; font-size: 0.78rem; text-align: center; line-height: 1.8; }
+  footer a { color: #7dd3fc; text-decoration: none; margin: 0 6px; }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <a class="back" href="/">&larr; Back to NexisSnap</a>
+
+    <h1>Guides</h1>
+    <p class="sub">Hand-picked comparisons while we build the full search tool — same idea, done manually for now: a Crowd Champion and a Lightning Pick for each category, with the reasoning behind each choice.</p>
+
+    <div class="grid">
+
+      <a class="card live" href="/packing-cubes.html">
+        <div class="card-left">
+          <div class="card-cat">Travel</div>
+          <div class="card-title">Best Packing Cubes for UK Travellers</div>
+        </div>
+        <div style="display:flex; align-items:center;">
+          <span class="badge live">Read guide</span>
+          <span class="arrow">&rarr;</span>
+        </div>
+      </a>
+
+      <a class="card live" href="/toddler-travel-toys.html">
+        <div class="card-left">
+          <div class="card-cat">Parents</div>
+          <div class="card-title">Best Toddler Travel Toys for Long-Haul Flights</div>
+        </div>
+        <div style="display:flex; align-items:center;">
+          <span class="badge live">Read guide</span>
+          <span class="arrow">&rarr;</span>
+        </div>
+      </a>
+
+      <div class="card soon">
+        <div class="card-left">
+          <div class="card-cat">Commuters</div>
+          <div class="card-title">Best Cable &amp; Tech Organisers</div>
+        </div>
+        <span class="badge soon">Coming soon</span>
+      </div>
+
+      <div class="card soon">
+        <div class="card-left">
+          <div class="card-cat">Travel</div>
+          <div class="card-title">Best Travel Neck Pillows</div>
+        </div>
+        <span class="badge soon">Coming soon</span>
+      </div>
+
+      <div class="card soon">
+        <div class="card-left">
+          <div class="card-cat">Home Office</div>
+          <div class="card-title">Best Desk Cable Management</div>
+        </div>
+        <span class="badge soon">Coming soon</span>
+      </div>
+
+      <div class="card soon">
+        <div class="card-left">
+          <div class="card-cat">Travel</div>
+          <div class="card-title">Best Reusable Travel Bottles</div>
+        </div>
+        <span class="badge soon">Coming soon</span>
+      </div>
+
+    </div>
+
+    <footer>
+      As an Amazon Associate, NexisSnap earns from qualifying purchases.<br>
+      <a href="/">Home</a> &middot; <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/about.html">About</a>
+    </footer>
+  </div>
+
+</body>
+</html>
