@@ -87,7 +87,7 @@
     font-weight: 600;
     letter-spacing: 0.12em;
     color: var(--text-secondary);
-    margin-bottom: 56px;
+    margin-bottom: 28px;
     opacity: 0;
     animation: fadeUp 0.8s ease forwards;
     display: flex;
@@ -105,6 +105,41 @@
   .logo b {
     color: var(--text-primary);
     font-weight: 700;
+  }
+
+  /* Nav strip */
+  .nav-strip {
+    display: flex;
+    gap: 4px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 6px;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.08s forwards;
+  }
+
+  .nav-strip a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 100px;
+    transition: color 0.2s ease, background 0.2s ease;
+  }
+
+  .nav-strip a:hover {
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.05);
+  }
+
+  .nav-strip a.active {
+    background: linear-gradient(135deg, var(--purple), var(--teal-dim));
+    color: #0a0a0b;
+    font-weight: 600;
   }
 
   /* Headline */
@@ -316,12 +351,13 @@
 
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; }
-    .logo, h1, .subhead, .counter-pod, form, .preview, footer { opacity: 1; }
+    .logo, .nav-strip, h1, .subhead, .counter-pod, form, .preview, footer { opacity: 1; }
   }
 
   @media (max-width: 480px) {
     form { flex-direction: column; }
     .preview { flex-direction: column; }
+    .nav-strip { flex-wrap: wrap; justify-content: center; }
   }
 </style>
 </head>
@@ -337,6 +373,13 @@
       <span class="logo-mark"></span>
       <b>NEXIS</b>SNAP
     </div>
+
+    <nav class="nav-strip" aria-label="Site navigation">
+      <a href="/" class="active">Home</a>
+      <a href="/packing-cubes.html">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
 
     <h1>Stop scrolling.<br>Start <span class="accent">deciding.</span></h1>
 
